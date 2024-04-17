@@ -3,6 +3,15 @@
 .header{
  background-color: antiquewhite;
 }
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 70px;
+    
+    width: 100%;
+}
 
 .anuncio{
     margin: auto;
