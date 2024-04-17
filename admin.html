@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="volver">
+        <a href="index.html" class="text-decoration-none" id="volver-btn">
+            Volver
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-left-circle" viewBox="0 0 16 16" id="arrow">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z">
+                </path>
+            </svg>
+        </a>
+    </div>
+    
+    <header id="header">
+        <h1>Carro de compra</h1>
+    </header>
+
+    <main>
+        <div class="contenedor ">
+            <!-- Añadir -->
+            <div class="añadir">
+                <h2>Añadir</h2>
+                <form>
+                    <label>Nombre del producto</label>
+                    <input type="text" id="productoAñadir" name="nombreDelProducto">
+
+                    <label>Valor del producto</label>
+                    <input type="number" id="valorAñadir">
+
+                    <label>Cantidad</label>
+                    <input type="number" id="existenciaAñadir">
+
+                    <label>Url Imagen</label>
+                    <input type="text" id="ImagenAñadir">
+
+                    <input class="button" type="button" id="botonAñadir" value="Añadir">
+                </form>
+            </div>
+            <!-- Editar -->
+            <div class="editar">
+                <h2>Editar</h2>
+                <form>
+                    <label>Nombre del producto</label>
+                    <select id="productoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label>Atributo</label>
+                    <select id="atributoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label>Nuevo valor</label>
+                    <input type="text" id="nuevoAtributo">
+
+                    <input class="button" type="button" id="botonEditar" value="Editar">
+                </form>
+            </div>
+
+            <!-- Eliminar -->
+            <div class="eliminar">
+                <h2>Eliminar</h2>
+
+                <form>
+                    <label>Nombre del producto</label>
+                    <select id="productoEliminar">
+                        <option value="">---</option>
+                    </select>
+                    <input class="button" type="button" id="botonEliminar" value="Eliminar">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
