@@ -146,3 +146,34 @@ input[type="submit"]:hover {
 .admin a:hover {
     text-decoration: underline;
 }
+
+.recuperardos {
+    border: 1px solid #441b98;
+    border-radius: 4px;
+    padding: 24px;
+    margin: auto; /* Esto centrará el cuadro horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;    
+}
+.submit-button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #198754;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.submit-button:hover {
+    border-color: green;
+    transition: .5s;
+}
