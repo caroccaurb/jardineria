@@ -21,13 +21,15 @@ body {
 }
 
 .formulario {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
+    position: relative; /* Cambiado a relativo */
+    z-index: 1; /* Z-index menor que el de la barra de navegación */
+    width: 90%; /* Ajuste el ancho según sea necesario */
+    max-width: 400px; /* Agregado para limitar el ancho máximo */
     background: white;
     border-radius: 10px;
+    margin: auto; /* Centro horizontalmente */
+    padding: 20px; /* Ajuste el relleno según sea necesario */
+    box-sizing: border-box; /* Para incluir el relleno en el ancho total */
 }
 
 .formulario h1 {

@@ -20,16 +20,19 @@
     <div class="container p-3 my-3 border text-dark text-center">
         <ul class="nav nav-pills d-flex justify-content-center align-items-center">
             <li class="nav-item">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="admin.html">
                     <img src="imagen/icono.png" alt="..." height="80">
                 </a>
             </li>
             <li class="nav-item dropdown">
-                <a href="admin.html">
-                    <button type="button" class="btn btn-success">
-                        Productos
-                    </button>
-                </a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle"
+                        data-bs-toggle="dropdown">Productos</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nuevopd.html">Añadir</a></li>
+                        <li><a class="dropdown-item" href="listaprod.html">Lista de productos</a></li>
+                    </ul>
+                </div>
 
                 <a href="pedidosad.html">
                     <button type="button" class="btn btn-success">
@@ -42,19 +45,6 @@
                         Usuarios
                     </button>
                 </a>
-
-                <a href="acceder.html">
-                    <button type="button" class="btn btn-success">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
-                            <path fill-rule="evenodd"
-                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1">
-                            </path>
-                        </svg>
-                        Acceder
-                    </button>
-                </a>
                 <a href="index.html">
                     <button type="button" class="btn btn-success">
                         Cerrar sesión
@@ -65,18 +55,8 @@
     </div>
 
     <header id="header">
-        <h1>Stock de productos</h1>
+        <h1>Stock de productos más vendidos este mes!</h1>
     </header>
-
-    <div class="add">
-        <button type="button" class="btn btn-primary">
-            Añadir
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-              </svg>
-        </button>
-    </div>
 
     <div class="container p-2 my-2">
         <table class="table align-middle">
