@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.recuperardos {
+    border: 1px solid #441b98;
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%; /* Ajusta el ancho según tus necesidades */
+}
+
+.confirmationTitle {
+    font-weight: bold;
+}
+
+.email {
+    font-weight: bold;
+}
