@@ -24,70 +24,23 @@
                 </a>
             </li>
             <li class="nav-item dropdown">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-success dropdown-toggle"
-                        data-bs-toggle="dropdown">Productos</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="flores.html ">Flores</a></li>
-                        <li><a class="dropdown-item" href="suculentas.html">Suculentas</a></li>
-                        <li><a class="dropdown-item" href="maceteros.html">Maceteros</a></li>
-                        <li><a class="dropdown-item" href="tierra.html">Tierra de hoja</a></li>
-                        <li><a class="dropdown-item" href="sustratos.html">Sustratos</a></li>
-                    </ul>
-                </div>
+                <a href="admin.html">
+                    <button type="button" class="btn btn-success">
+                        Productos
+                    </button>
+                </a>
 
-                <a href="pedidoscli.html">
+                <a href="pedidosad.html">
                     <button type="button" class="btn btn-success">
                         Pedidos
                     </button>
                 </a>
 
-                <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Carro de compras</button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carro de compras</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="table-responsive">
-                            <table class="table align-middle">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Imagen</th>
-                                        <th scope="col">Producto</th>
-                                        <th scope="col">Precio</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="images"><img src="imagen/flores/rosa1.png" width="50px"
-                                                height="50px"></td>
-                                        <td>Rosas</td>
-                                        <td>$3.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="images"><img src="imagen/suculentas/suculenta2.png" width="50px"
-                                                height="50px"></td>
-                                        <td>Cactáceas</td>
-                                        <td>$3.000</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="images"><img src="imagen/sustratos/vitasac.png" width="50px"
-                                                height="50px"></td>
-                                        <td>Fertilizante para flores</td>
-                                        <td>$2.490</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <a href="carro.html"><button class="btn btn-success">Pagar</button></a>
-                        <button class="btn btn-danger"> Vaciar Carro</button>
-                    </div>
-                </div>
+                 <a href="usuarios.html">
+                    <button type="button" class="btn btn-success">
+                        Usuarios
+                    </button>
+                </a>
 
                 <a href="acceder.html">
                     <button type="button" class="btn btn-success">
@@ -101,6 +54,11 @@
                         Acceder
                     </button>
                 </a>
+                <a href="index.html">
+                    <button type="button" class="btn btn-success">
+                        Cerrar sesión
+                    </button>
+                </a>
             </li>
         </ul>
     </div>
@@ -109,8 +67,8 @@
         <h1>Pedidos</h1>
     </header>
 
-    <div class="tabla p-2 my-2">
-        <table class="table">
+    <div class="container p-2 my-2">
+        <table class="table align-middle">
             <thead>
                 <tr>
                     <th scope="col">Imagen</th>
@@ -126,14 +84,12 @@
                     <td>Rosas</td>
                     <td>$3.000</td>
                     <td>Cancelado</td>
-                    <td><button type="button" class="btn btn-success dropdown-toggle"
-                            data-bs-toggle="dropdown">Estado</button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Completado</a></li>
-                            <li><a class="dropdown-item" href="#">Pendiente</a></li>
-                            <li><a class="dropdown-item" href="#">Enviado</a></li>
-                            <li><a class="dropdown-item" href="#">Cancelado</a></li>
-                        </ul>
+                    <td><select class="form-select form-select-sm" aria-label="Small select example">
+                        <option selected>Estado</option>
+                        <option value="1">Completado</option>
+                        <option value="2">Pendiente</option>
+                        <option value="3">Cancelado</option>
+                      </select>
                     </td>
                 </tr>
 
@@ -142,15 +98,13 @@
                     <td>Cactáceas</td>
                     <td>$3.000</td>
                     <td>Pendiente</td>
-                    <td><button type="button" class="btn btn-success dropdown-toggle"
-                        data-bs-toggle="dropdown">Estado</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Completado</a></li>
-                        <li><a class="dropdown-item" href="#">Pendiente</a></li>
-                        <li><a class="dropdown-item" href="#">Enviado</a></li>
-                        <li><a class="dropdown-item" href="#">Cancelado</a></li>
-                    </ul>
-                </td>
+                    <td><select class="form-select form-select-sm" aria-label="Small select example">
+                        <option selected>Estado</option>
+                        <option value="1">Completado</option>
+                        <option value="2">Pendiente</option>
+                        <option value="3">Cancelado</option>
+                      </select>
+                    </td>
                 </tr>
 
                 <tr>
@@ -158,15 +112,13 @@
                     <td>Fertilizante para flores</td>
                     <td>$2.490</td>
                     <td>Completado</td>
-                    <td><button type="button" class="btn btn-success dropdown-toggle"
-                        data-bs-toggle="dropdown">Estado</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Completado</a></li>
-                        <li><a class="dropdown-item" href="#">Pendiente</a></li>
-                        <li><a class="dropdown-item" href="#">Enviado</a></li>
-                        <li><a class="dropdown-item" href="#">Cancelado</a></li>
-                    </ul>
-                </td>
+                    <td><select class="form-select form-select-sm" aria-label="Small select example">
+                        <option selected>Estado</option>
+                        <option value="1">Completado</option>
+                        <option value="2">Pendiente</option>
+                        <option value="3">Cancelado</option>
+                      </select>
+                    </td>
                 </tr>
             </tbody>
         </table>

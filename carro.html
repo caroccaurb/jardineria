@@ -88,7 +88,7 @@
                         <button class="btn btn-danger"> Vaciar Carro</button>
                     </div>
                 </div>
-                
+
                 <a href="acceder.html">
                     <button type="button" class="btn btn-success">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -146,14 +146,37 @@
     <div class="textpag">
         <h2>Total a pagar: $8.490 </h2>
     </div>
-    
+
     <div class="btnpag">
         <a href="#">
-        <button class="btn btn-success">Pagar</button>
-    </a>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Pagar</button>
+
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h4 class="modal-title">¿Deseas realizar la compra?</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+
+                            <a href="index.html">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Confirmar</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </a>
         <a href="index.html">
-        <button class="btn btn-danger">Cancelar Compra</button>
-    </a>
+            <button class="btn btn-danger">Cancelar Compra</button>
+        </a>
     </div>
 
     <div>
