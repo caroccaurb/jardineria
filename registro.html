@@ -55,36 +55,43 @@
     </div>
     <div class="formulario">
         <h1>Registrate!</h1>
-        <form method="post" action="indexcliente.html">
+        <form method="get" action="indexcliente.html">
          <div class="username">
             <label class="label-form">Nombre</label>
-             <input type="text"class="form-control" id="regNombre" required minlength="2" maxlength="24">
+             <input type="text"class="form-control" id="regNombre" onblur="validarFormulario()">
+             <div class="text-danger" id="msgNombre"></div>
          </div>
          <div class="username">
             <label class="label-form">Apellido</label>
-             <input type="text" class="form-control" id="regApellido" required minlength="2" maxlength="24">
+             <input type="text" class="form-control" id="regApellido" onblur="validarFormulario()">
+             <div class="text-danger" id="msgApellido"></div>
          </div>
          <div class="username">
             <label class="label-form">Rut</label>
-            <input type="text" class="form-control" id="regRut" required>
+            <input type="text" class="form-control" id="regRut" onblur="validarFormulario()">
+            <div class="text-danger" id="msgRut"></div>
         </div>
         <div class="username">
             <label class="label-form">Email</label>
-            <input type="email" class="form-control" id="regEmail" required>
+            <input type="email" class="form-control" id="regEmail" onblur="validarFormulario()">
+            <div class="text-danger" id="msgEmail"></div>
         </div>
         <div class="username">
             <label class="label-form">Telefono</label>
-            <input type="number" class="form-control" id="regTelefono" required pattern="\d{10}" minlength="10" maxlength="10">
+            <input type="number" class="form-control" id="regTelefono" onblur="validarFormulario()">
+            <div class="text-danger" id="msgTel"></div>
         </div>
         <div class="username">
             <label class="label-form">Contraseña</label>
-            <input type="password" class="form-control"id="passwd" required minlength="8" maxlength="16">
+            <input type="password" class="form-control"id="passwd" onblur="validarFormulario()">
+            <div class="text-danger" id="msgpass1"></div>
         </div>
         <div class="username">
             <label class="label-form">Confirma contraseña</label>
-            <input type="password" class="form-control" id="passwd2" required minlength="8" maxlength="16">
+            <input type="password" class="form-control" id="passwd2" onblur="validarFormulario()">
+            <div class="text-danger" id="msgpass2"></div>
         </div>
-         <button type="submit" value="Registrarse"> Registrarse</button>
+        <button class="btn btn-success" type="submit" id="btnsubmit" onclick="return validarFormulario()">Registrarse</button>
          <div class="registrate">
             <a href="acceder.html">¿Ya tienes una cuenta?</a>
         </div>
