@@ -73,7 +73,9 @@
             <input class="form-control" type="text" id="valor" onblur="validarFormulario()">
             <div class="text-danger" id="msgvalor"></div>
         </div>
-            <input class="form-control" type="file" >
+        <div class="mb-3">
+            <input type="file" class="form-control" aria-label="file example" required>
+          </div>
             <button class="btn btn-success mt-4" type="submit"id="btnsubmit" onclick="return validarFormulario()">Registrar Producto</button>
         </form>
      </div>
